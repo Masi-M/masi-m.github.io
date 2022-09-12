@@ -1,16 +1,18 @@
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 body{
+    display: block;
     margin: 0 auto;
-    max-width: 100vw;
-    max-height: 100vh;
+    contain: strict;
+    max-height: max-content;
     width: 100vw;
+    height: 100vw;
     background: radial-gradient(rgb(98, 0, 230), rgb(0, 120, 225)) center fixed;
-    overflow: hidden auto;
+
 }
 .nav-bar{
     position: fixed;
@@ -25,28 +27,50 @@ body{
 }
 .nav-content{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: auto;
+    vertical-align: middle;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
 }
 .logo span{
     color: rgb(255, 255, 255);
 }
+.logo span:hover{
+    color: rgb(0, 0, 0);
+}
+h1 a:hover{
+    color: aquamarine;
+}
+.logo span a:hover{
+    color: rgb(207, 162, 192);
+}
 .left-nav{
     display: inline;
 }
-.right-nav{
+.left-nav li:hover{
+    transform: translateY(-5%);
+    transition: 0.34s ease-in-out;
+}
+.right-nav a{
     display: inline;
     text-align: center;
 }
-.right-nav li{
+.right-nav li a:hover{
+    box-shadow: 5px 2px 100px 1px rgba(255, 255, 255, 0.75);
+}
+.right-nav li a{
     display: inline-flex;
+    flex-direction: column;
     border: 1px solid transparent;
     border-radius: 30px;
-    width: fit-content;
-    justify-items: space-evenly;
+    justify-items: center;
     vertical-align: middle;
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 a{
     color: rgba(0, 0, 0, 0.85);
@@ -70,10 +94,10 @@ img{
     background-color: aliceblue;
     border: none;
     color: rgb(255, 255, 255);
+    overflow: visible;
+
 }
 img:hover{
-    width: 100%;
-    height: 100%;
     opacity: 1;
     transform: scale(105%);
     transition: 0.5s ease-out;
@@ -82,9 +106,7 @@ img:hover{
 }
 .img-container{
     padding-top: 5.2vh;
-    padding-left: 0;
     width: 100vw;
-    margin: 0 -1em 0 -1em;
 }
 .intro {
     margin-top: 180px;
@@ -104,20 +126,18 @@ img:hover{
 }
 
 .specialties {
-    position: sticky;
     color: aqua;
     font-weight: 500;
     width: 100vw;
+    height: 40vh;
     margin-left: -0.1em;
+    overflow: hidden;
 }
 ul.slick-dots, button{
     display: flex;
-    flex-direction: row;
-    vertical-align: middle;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 0.9em;
+    margin-left: 50%;
     width: 20px;
+    border-radius: 35px;
     padding: 0.1px;
 }
 .slick-arrow {
@@ -125,7 +145,6 @@ ul.slick-dots, button{
 }
 section{
     display: block;
-    margin: 2em 3em 2em 3em;
     text-align: justify;
 }
 /*
