@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 body{
     display: block;
-    margin: 0 auto;
+    margin: 0px auto;
     contain: strict;
     max-height: max-content;
     width: 100vw;
@@ -22,7 +22,7 @@ body{
     background: rgba(238,174,202,085);
     background: radial-gradient(circle, rgba(238,174,202,0.85) 0%, rgba(148,187,233,0.85) 100%);
     border-bottom: 1px solid transparent;
-    box-shadow:0 0 2px 1px rgba(99, 99, 99, 0.85);
+    box-shadow:0px 0px 2px 1px rgba(99, 99, 99, 0.85);
     padding-top: 1.5px;
 }
 .nav-content{
@@ -34,6 +34,16 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     width: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    list-style: none;
+}
+.menu {
+    display: none;
+}
+.logo{
+    letter-spacing: 0.2em;
+    font-size: 28px;
 }
 .logo span{
     color: rgb(255, 255, 255);
@@ -95,7 +105,7 @@ img{
     border: none;
     color: rgb(255, 255, 255);
     overflow: visible;
-    padding: 0;
+    padding: 0px;
 
 }
 img:hover{
@@ -110,7 +120,7 @@ img:hover{
     width: 100vw;
 }
 .intro {
-    margin: 80px 0 0 20px;
+    margin: 80px 0px 0px 20px;
     height: 20vh;
 }/*
 .intro {
@@ -184,5 +194,11 @@ section{
     .right-nav li a, .left-nav li a{
         display: none;
     }
-    
+    .menu {
+        display: flex;
+        background-color: rgb(13, 14, 14);
+        width: 25px;
+        height: 3px;
+        margin: 5px
+    }
 }
