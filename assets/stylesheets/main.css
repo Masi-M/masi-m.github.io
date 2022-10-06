@@ -46,7 +46,7 @@ svg{
 
 .logo{
     letter-spacing: 0.2em;
-    font-size: 28px;
+    font-size: 40px;
 }
 .logo span{
     color: rgb(255, 255, 255);
@@ -154,6 +154,10 @@ ul.slick-dots, button{
     width: 20px;
     border-radius: 35px;
     padding: 0.1px;
+    border: none;
+    outline: none;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
 }
 .slick-arrow {
     display: inline-block;
