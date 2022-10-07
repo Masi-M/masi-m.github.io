@@ -8,9 +8,16 @@ body{
     display: block;
     margin: 0px auto;
     contain: strict;
+<<<<<<< HEAD
     max-height: 100vh;
     max-width: 100vw;
     height: 100vh;
+=======
+    max-height: max-content;
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vw;
+>>>>>>> a0861f21fbb5a75df8ec28489ed79323b6f41b2d
     background: radial-gradient(rgb(98, 0, 230), rgb(0, 120, 225)) center fixed;
 
 }
@@ -156,8 +163,11 @@ ul.slick-dots, button{
     padding: 0.1px;
     border: none;
     outline: none;
+<<<<<<< HEAD
     color:rgb(0, 0, 0);
     background-color: transparent;
+=======
+>>>>>>> a0861f21fbb5a75df8ec28489ed79323b6f41b2d
 }
 .slick-arrow {
     display: inline-block;
